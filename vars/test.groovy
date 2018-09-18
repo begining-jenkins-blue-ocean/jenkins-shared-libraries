@@ -1,12 +1,19 @@
 def call() {
-pipeline {
-  agent any
-    stages {
-      stage('Odd Stage') {
-        steps {
-          echo "The build number is odd"
-        }
+  stages {
+    stage('Build') {
+      steps {
+        echo "Building"
       }
     }
+    stage('Test') {
+      steps {
+        echo "Testing"
+      }
+    }
+    stage('Publish') {
+      steps {
+        echo "Publishing"
+      }
+    } 
   }
 }
