@@ -1,4 +1,5 @@
 def call() {
+pipeline {  
   stages {
     stage('Build') {
       steps {
@@ -17,3 +18,5 @@ def call() {
     } 
   }
 }
+}
+  
